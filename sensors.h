@@ -17,5 +17,4 @@ unsigned int getRightSensor();
 
 unsigned int getCenterSensor();
 
-
 #endif /* SENSORS_H_ */

@@ -14,7 +14,7 @@ int main(void) {
 		getLeftSensor();
 
 		// LPM0, ADC10_ISR will force exit
-		if (ADC10MEM < 0x1FF) {
+		if (ADC10MEM < 0x366) {
 			P1OUT &= ~BIT0;  			// Clear P1.0 LED off
 		} else {
 			P1OUT |= BIT0; 				// Set P1.0 LED on
@@ -24,7 +24,7 @@ int main(void) {
 
 		getRightSensor();
 
-		if (ADC10MEM < 0x1FF) {
+		if (ADC10MEM < 0x366) {
 			P1OUT &= ~BIT6;
 		} else {
 			P1OUT |= BIT6;
