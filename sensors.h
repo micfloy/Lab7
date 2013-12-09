@@ -1,3 +1,4 @@
+#include <msp430.h>
 /*
  * sensors.h
  *
@@ -8,13 +9,13 @@
 #ifndef SENSORS_H_
 #define SENSORS_H_
 
-void initADC();
+void initADCandPins();
 
-unsigned char getLeftSensor();
+unsigned int getLeftSensor();
 
-unsigned char getRightSensor();
+unsigned int getRightSensor();
 
-unsigned char getCenterSensor();
+unsigned int getCenterSensor();
 
 
 #endif /* SENSORS_H_ */
